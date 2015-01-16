@@ -1,5 +1,6 @@
 #CÀI ĐẶT WEB SERVER SỬ DỤNG NGINX TRÊN UBUNTU
-###Mục lục
+<a name=mucluc></a>
+###[Mục lục] (#mucluc)
 - [1. Giới thiệu](#gioithieu)
 - [2. Cài đặt nginx làm webserver](#caidat)
 - [3. Tạo một virtualhost sử dụng nginx](#tao)
