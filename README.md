@@ -5,7 +5,6 @@
 - [2. Cài đặt nginx làm webserver](#caidat)
 - [3. Tạo một virtualhost sử dụng nginx](#tao)
 - [4. Cấu hình Virtualhost] (#cauhinh)
-Cấu hình Virtualhost
 
 <a name="gioithieu"></a>
 ##1. Giới thiệu
@@ -24,7 +23,7 @@ Nginx hỗ trợ mysql,mariadb Percona , php, python… Nginx hỗ trợ nhiều
 <img src="http://i.imgur.com/4KsP6Me.png">
 
 *Nginx có thể nhận số request gấp khoảng 4 lần so với Apache*
----
+
 <a name="caidat"></a>
 ##2. Cài đặt nginx làm webserver
 - Ta dùng dòng lệnh sau để tiến hành cài đặt
@@ -34,7 +33,7 @@ Sau khi cài đặt truy cập vào tên miền hoặc địa chỉ server nếu
 
 <img src="http://i.imgur.com/ShV3YmL.png">
 
----
+
 <a name="tao"></a>
 ##3. Tạo một virtualhost sử dụng nginx
 - Tạo 1 folder làm Document Root cho virtualhost
@@ -60,7 +59,7 @@ Với nội dung như sau
   </body>
 </html>```
 
----
+
 <a name="cauhinh"></a>
 ##4. Cấu hình Virtualhost
 - Bước này để tạo một tập tin mới có chứa các thông tin về virtual host
