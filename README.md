@@ -49,16 +49,16 @@ Sau khi cài đặt truy cập vào tên miền hoặc địa chỉ server nếu
 **`sudo vi /var/www/nginx-webserver/index.html`**
 
 Với nội dung như sau
-
-```<html>
+```
+<html>
   <head>
     <title>Nginx-webserver</title>
   </head>
   <body>
     <h1>install nginx thanh cong</h1>
   </body>
-</html>```
-
+</html>
+```
 
 <a name="cauhinh"></a>
 ##4. Cấu hình Virtualhost
