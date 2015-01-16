@@ -1,3 +1,2 @@
-# nginx
-install nginx
-Tran Huy
+#CÀI ĐẶT WEB SERVER SỬ DỤNG NGINX TRÊN UBUNTU
+
