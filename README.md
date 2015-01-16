@@ -14,3 +14,85 @@ Nginx hỗ trợ mysql,mariadb Percona , php, python… Nginx hỗ trợ nhiều
 <img src="http://i.imgur.com/4KsP6Me.png">
 
 *Nginx có thể nhận số request gấp khoảng 4 lần so với Apache*
+
+
+##2. Cài đặt nginx làm webserver
+- Ta dùng dòng lệnh sau để tiến hành cài đặt
+**`sudo apt-get install nginx`**
+
+Sau khi cài đặt truy cập vào tên miền hoặc địa chỉ server nếu thấy như sau là thành công
+
+<img src="http://i.imgur.com/ShV3YmL.png">
+
+##3. Tạo một virtualhost sử dụng nginx
+- Tạo 1 folder làm Document Root cho virtualhost
+**`sudo mkdir -p /var/www/nginx-webserver`**
+- Cấp quyền sở hữu và thực thi cho folder (Document Root) vừa khởi tạo
+
+**`sudo chown -R www-data:www-data /var/www/nginx-webserver`**
+
+**`sudo chmod 755 /var/www`**
+
+- Tạo một trang có tên **index.html** trong folder (Document Root)
+
+**`sudo vi /var/www/nginx-webserver/index.html`**
+
+Với nội dung như sau
+
+{
+<html>
+  
+<head>
+    
+<title>Nginx-webserver</title>
+  
+</head>
+  
+<body>
+   
+<h1>install nginx thanh cong</h1>
+  
+</body>
+
+</html>
+
+}
+
+##4. Cấu hình Virtualhost
+- Bước này để tạo một tập tin mới có chứa các thông tin về virtual host
+
+Nginx quy định vị trí file này phải được đặt trong sites-avaiable (/etc/nginx/sites-avaiable), vì thế cách đơn giản nhất là copy file cấu hình mặc định của nginx tại /etc/nginx/sites-avaiable để sử dụng
+
+**`sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/nginx-webserver`**
+
+- Cấu hình Virtual host sử dụng cổng 8080 và với Document Root /var/www/nginx-webserver vừa tạo ở trên
+
+**`sudo vi/etc/nginx/sites-available/nginx-webserver`**
+
+- Cấu hình môt số thông tin cơ bản sau
+
+<img src="http://i.imgur.com/s6CofGa.png">
+
+
+- Tạo một liên kết giữa thư mục sites-available và thư mục sites-enabled để kích hoạt host
+
+**`sudo ln -s /etc/nginx/sites-available/nginx-webserver /etc/nginx/sites-enabled/nginx-webserver`**
+
+- Restart nginx
+
+**`sudo service nginx restart`**
+
+- Truy cập vào địa chỉ webserver với port 8080
+
+<img src="http://i.imgur.com/8QCNIQg.png">
+
+- Tương tự, có thể cấu hình 1 virtual host khác sử dụng port 8081
+
+<img src="http://i.imgur.com/ZKao1cj.png"
+
+
+*Download scrtip cài đăt nginx trên ubuntu tại đây*
+[script]()
+
+
+
