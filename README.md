@@ -91,8 +91,8 @@ Nginx quy định vị trí file này phải được đặt trong sites-avaiabl
 
 - Tương tự, có thể cấu hình 1 virtual host khác sử dụng port 8081
 
-<img src="http://i.imgur.com/ZKao1cj.png"
+<img src="http://i.imgur.com/ZKao1cj.png">
 
 
-*THam khảo scrtip cài đăt nginx trên ubuntu tại đây*
-(https://github.com/huytm/nginx/blob/master/nginx.sh)
+*THam khảo scrtip cài đăt nginx trên ubuntu tại [đây](https://doc-0c-2s-docs.googleusercontent.com/docs/securesc/onq6t89s4e2d158q7ghr6snqb7f6rl3k/8tudbsunp9i7et03b5aj15krrggos1qo/1421373600000/15500836932004918509/15500836932004918509/0ByTN88f1PT8tT0VVTmZSaTVMTTg?e=download&nonce=7smq8s5ndpqvo&user=15500836932004918509&hash=i8umuh31mcbkde9erdc3972b4rtahqol)*
+
