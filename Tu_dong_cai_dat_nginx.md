@@ -38,4 +38,4 @@ awk '/default_server;/ {print $2 }' /etc/nginx/sites-available/huy
 `sudo ./nginx.sh`
 
 4. Truy cập vào địa chỉ server với thông báo hiển thị trên màn hình
-<img ="http://i.imgur.com/9TRFA7W.png">
+<img src="http://i.imgur.com/9TRFA7W.png">
