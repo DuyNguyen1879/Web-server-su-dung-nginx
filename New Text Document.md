@@ -1,5 +1,5 @@
-# C�i d?t nginx t? d?ng b?ng scritp tr�n ubuntu 14.04
-1. Download script t?i [d�y] () ho?c t?o m?t file *nginx.sh* v?i n?i dung nhu sau
+﻿# Cài đặt nginx tự động bằng scritp trên ubuntu 14.04
+1. Download scrip tại [đây] (https://www.dropbox.com/s/k6a3hojhfprpvix/nginx.sh?dl=0) hoặc tạo một file *nginx.sh* với nội dung như sau
 
 `sudo vi nginx.sh`
 
@@ -28,12 +28,14 @@ echo VOI PORT
 awk '/default_server;/ {print $2 }' /etc/nginx/sites-available/huy
 ```
 
-2. C?p quy?n th?c thi (excute) cho file script (d?m b?o v?i c�c user thu?c nh�m o (other) cung c� th? th?c hi?n du?c file
+2. Cấp quyền thực thi (excute) cho file script (đảm bảo với các user thuộc nhóm o (other) cung có thể thực hiện được file
 
 `sudo chmod +x nginx.sh`
+<img src="http://i.imgur.com/EEf2KIS.png">
 
-3. Ch?y file
+3. Chạy file
 
-`./nginx.sh`
+`sudo ./nginx.sh`
 
-4. Truy c?p v�o d?a ch? server v?i th�ng b�o hi?n th?
+4. Truy cập vào địa chỉ server với thông báo hiển thị trên màn hình
+<img ="http://i.imgur.com/9TRFA7W.png">
